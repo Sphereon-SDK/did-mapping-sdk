@@ -1,6 +1,6 @@
 # DidMapControllerApi
 
-All URIs are relative to *http://localhost:45971*
+All URIs are relative to *http://localhost:37645*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 ## getDidMap
 
-> ResponseEntity getDidMap(applicationId, userId)
+> DidMappingResponse getDidMap(applicationId, userId)
 
 Get a stored DID Map
 
@@ -30,13 +30,13 @@ import com.sphereon.sdk.did.mapping.api.DidMapControllerApi;
 public class Example {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        defaultClient.setBasePath("http://localhost:45971");
+        defaultClient.setBasePath("http://localhost:37645");
 
         DidMapControllerApi apiInstance = new DidMapControllerApi(defaultClient);
         String applicationId = "applicationId_example"; // String | applicationId
         String userId = "userId_example"; // String | userId
         try {
-            ResponseEntity result = apiInstance.getDidMap(applicationId, userId);
+            DidMappingResponse result = apiInstance.getDidMap(applicationId, userId);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling DidMapControllerApi#getDidMap");
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ResponseEntity**](ResponseEntity.md)
+[**DidMappingResponse**](DidMappingResponse.md)
 
 ### Authorization
 
@@ -100,7 +100,7 @@ import com.sphereon.sdk.did.mapping.api.DidMapControllerApi;
 public class Example {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        defaultClient.setBasePath("http://localhost:45971");
+        defaultClient.setBasePath("http://localhost:37645");
 
         DidMapControllerApi apiInstance = new DidMapControllerApi(defaultClient);
         DidMappingRequest didMapRequest = new DidMappingRequest(); // DidMappingRequest | didMapRequest

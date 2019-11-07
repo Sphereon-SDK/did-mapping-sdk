@@ -38,7 +38,7 @@ import java.util.StringJoiner;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-07T11:23:09.352456+01:00[Europe/Amsterdam]")
+@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-07T13:14:15.882187+01:00[Europe/Amsterdam]")
 public class DidMapControllerApi {
   private final HttpClient memberVarHttpClient;
   private final ObjectMapper memberVarObjectMapper;
@@ -63,10 +63,10 @@ public class DidMapControllerApi {
    * Submit a list of DID Maps, associating a User ID to the necessary DID information for authentication
    * @param applicationId applicationId (required)
    * @param userId userId (required)
-   * @return ResponseEntity
+   * @return DidMappingResponse
    * @throws ApiException if fails to make API call
    */
-  public ResponseEntity getDidMap(String applicationId, String userId) throws ApiException {
+  public DidMappingResponse getDidMap(String applicationId, String userId) throws ApiException {
     // verify the required parameter 'applicationId' is set
     if (applicationId == null) {
       throw new ApiException(400, "Missing the required parameter 'applicationId' when calling getDidMap");
@@ -105,7 +105,7 @@ public class DidMapControllerApi {
             localVarResponse.body() == null ? null : new String(localVarResponse.body().readAllBytes()));
       }
 
-      return memberVarObjectMapper.readValue(localVarResponse.body(), new TypeReference<ResponseEntity>() {});
+      return memberVarObjectMapper.readValue(localVarResponse.body(), new TypeReference<DidMappingResponse>() {});
     } catch (IOException | InterruptedException e) {
       throw new ApiException(e);
     }

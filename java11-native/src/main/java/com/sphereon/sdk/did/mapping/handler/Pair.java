@@ -13,7 +13,7 @@
 
 package com.sphereon.sdk.did.mapping.handler;
 
-@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-07T11:23:09.352456+01:00[Europe/Amsterdam]")
+@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-07T13:14:15.882187+01:00[Europe/Amsterdam]")
 public class Pair {
     private String name = "";
     private String value = "";

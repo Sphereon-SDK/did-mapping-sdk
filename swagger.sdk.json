@@ -67,7 +67,7 @@
         "responses": {
           "200": {
             "schema": {
-              "$ref": "#\/definitions\/ResponseEntity"
+              "$ref": "#\/definitions\/DidMappingResponse"
             },
             "description": "Did Map found."
           },
@@ -106,7 +106,7 @@
       }
     }
   },
-  "host": "localhost:45971",
+  "host": "localhost:37645",
   "definitions": {
     "DidMappingResponse": {
       "type": "object",

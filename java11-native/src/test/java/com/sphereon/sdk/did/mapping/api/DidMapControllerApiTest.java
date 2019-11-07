@@ -47,7 +47,7 @@ public class DidMapControllerApiTest {
     public void getDidMapTest() throws ApiException {
         String applicationId = null;
         String userId = null;
-        ResponseEntity response = api.getDidMap(applicationId, userId);
+        DidMappingResponse response = api.getDidMap(applicationId, userId);
 
         // TODO: test validations
     }

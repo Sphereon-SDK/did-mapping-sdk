@@ -4,7 +4,7 @@ Did Mapping MS
 
 - API version: 1.0.0
 
-- Build date: 2019-11-07T11:23:09.352456+01:00[Europe/Amsterdam]
+- Build date: 2019-11-07T13:14:15.882187+01:00[Europe/Amsterdam]
 
 A microservice for storing associations between user IDs and DIDs for applications that want to use DID-Auth
 
@@ -88,7 +88,7 @@ public class DidMapControllerApiExample {
         String applicationId = "applicationId_example"; // String | applicationId
         String userId = "userId_example"; // String | userId
         try {
-            ResponseEntity result = apiInstance.getDidMap(applicationId, userId);
+            DidMappingResponse result = apiInstance.getDidMap(applicationId, userId);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling DidMapControllerApi#getDidMap");
@@ -104,7 +104,7 @@ public class DidMapControllerApiExample {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://localhost:45971*
+All URIs are relative to *http://localhost:37645*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
