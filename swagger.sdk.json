@@ -78,9 +78,6 @@
             "description": "Forbidden"
           },
           "404": {
-            "schema": {
-              "$ref": "#\/definitions\/ResponseEntity"
-            },
             "description": "Did Map not found."
           }
         },
@@ -106,7 +103,7 @@
       }
     }
   },
-  "host": "localhost:37645",
+  "host": "localhost:33757",
   "definitions": {
     "DidMappingResponse": {
       "type": "object",

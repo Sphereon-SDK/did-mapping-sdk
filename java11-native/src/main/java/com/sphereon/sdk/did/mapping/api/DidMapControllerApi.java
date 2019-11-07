@@ -19,7 +19,6 @@ import com.sphereon.sdk.did.mapping.handler.Pair;
 import com.sphereon.sdk.did.mapping.model.DidMappingRequest;
 import com.sphereon.sdk.did.mapping.model.DidMappingResponse;
 import com.sphereon.sdk.did.mapping.model.ExceptionResponseBody;
-import com.sphereon.sdk.did.mapping.model.ResponseEntity;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -38,7 +37,7 @@ import java.util.StringJoiner;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-07T13:14:15.882187+01:00[Europe/Amsterdam]")
+@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-07T13:45:10.192471+01:00[Europe/Amsterdam]")
 public class DidMapControllerApi {
   private final HttpClient memberVarHttpClient;
   private final ObjectMapper memberVarObjectMapper;

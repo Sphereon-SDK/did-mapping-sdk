@@ -1,6 +1,6 @@
 # DidMapControllerApi
 
-All URIs are relative to *http://localhost:37645*
+All URIs are relative to *http://localhost:33757*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -30,7 +30,7 @@ import com.sphereon.sdk.did.mapping.api.DidMapControllerApi;
 public class Example {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        defaultClient.setBasePath("http://localhost:37645");
+        defaultClient.setBasePath("http://localhost:33757");
 
         DidMapControllerApi apiInstance = new DidMapControllerApi(defaultClient);
         String applicationId = "applicationId_example"; // String | applicationId
@@ -100,7 +100,7 @@ import com.sphereon.sdk.did.mapping.api.DidMapControllerApi;
 public class Example {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        defaultClient.setBasePath("http://localhost:37645");
+        defaultClient.setBasePath("http://localhost:33757");
 
         DidMapControllerApi apiInstance = new DidMapControllerApi(defaultClient);
         DidMappingRequest didMapRequest = new DidMappingRequest(); // DidMappingRequest | didMapRequest
