@@ -4,7 +4,7 @@ Did Mapping MS
 
 - API version: 1.0.0
 
-- Build date: 2019-11-06T11:11:43.575532+01:00[Europe/Amsterdam]
+- Build date: 2019-11-07T11:23:09.352456+01:00[Europe/Amsterdam]
 
 A microservice for storing associations between user IDs and DIDs for applications that want to use DID-Auth
 
@@ -88,10 +88,10 @@ public class DidMapControllerApiExample {
         String applicationId = "applicationId_example"; // String | applicationId
         String userId = "userId_example"; // String | userId
         try {
-            ResponseEntity result = apiInstance.storeDidMaps(applicationId, userId);
+            ResponseEntity result = apiInstance.getDidMap(applicationId, userId);
             System.out.println(result);
         } catch (ApiException e) {
-            System.err.println("Exception when calling DidMapControllerApi#storeDidMaps");
+            System.err.println("Exception when calling DidMapControllerApi#getDidMap");
             System.err.println("Status code: " + e.getCode());
             System.err.println("Reason: " + e.getResponseBody());
             System.err.println("Response headers: " + e.getResponseHeaders());
@@ -104,12 +104,12 @@ public class DidMapControllerApiExample {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://localhost:37961*
+All URIs are relative to *http://localhost:45971*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*DidMapControllerApi* | [**storeDidMaps**](docs/DidMapControllerApi.md#storeDidMaps) | **GET** /didmaps/{applicationId}/{userId} | Get a stored DID Map
-*DidMapControllerApi* | [**storeDidMaps1**](docs/DidMapControllerApi.md#storeDidMaps1) | **POST** /didmaps | Store DID Maps
+*DidMapControllerApi* | [**getDidMap**](docs/DidMapControllerApi.md#getDidMap) | **GET** /didmaps/{applicationId}/{userId} | Get a stored DID Map
+*DidMapControllerApi* | [**storeDidMaps**](docs/DidMapControllerApi.md#storeDidMaps) | **POST** /didmaps | Store DID Maps
 
 
 ## Documentation for Models

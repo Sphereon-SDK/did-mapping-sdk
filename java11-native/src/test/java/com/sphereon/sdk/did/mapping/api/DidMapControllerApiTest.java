@@ -44,10 +44,10 @@ public class DidMapControllerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void storeDidMapsTest() throws ApiException {
+    public void getDidMapTest() throws ApiException {
         String applicationId = null;
         String userId = null;
-        ResponseEntity response = api.storeDidMaps(applicationId, userId);
+        ResponseEntity response = api.getDidMap(applicationId, userId);
 
         // TODO: test validations
     }
@@ -61,9 +61,9 @@ public class DidMapControllerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void storeDidMaps1Test() throws ApiException {
+    public void storeDidMapsTest() throws ApiException {
         DidMappingRequest didMapRequest = null;
-        DidMappingResponse response = api.storeDidMaps1(didMapRequest);
+        DidMappingResponse response = api.storeDidMaps(didMapRequest);
 
         // TODO: test validations
     }

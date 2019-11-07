@@ -38,7 +38,7 @@ import java.util.StringJoiner;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-06T11:11:43.575532+01:00[Europe/Amsterdam]")
+@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-07T11:23:09.352456+01:00[Europe/Amsterdam]")
 public class DidMapControllerApi {
   private final HttpClient memberVarHttpClient;
   private final ObjectMapper memberVarObjectMapper;
@@ -66,14 +66,14 @@ public class DidMapControllerApi {
    * @return ResponseEntity
    * @throws ApiException if fails to make API call
    */
-  public ResponseEntity storeDidMaps(String applicationId, String userId) throws ApiException {
+  public ResponseEntity getDidMap(String applicationId, String userId) throws ApiException {
     // verify the required parameter 'applicationId' is set
     if (applicationId == null) {
-      throw new ApiException(400, "Missing the required parameter 'applicationId' when calling storeDidMaps");
+      throw new ApiException(400, "Missing the required parameter 'applicationId' when calling getDidMap");
     }
     // verify the required parameter 'userId' is set
     if (userId == null) {
-      throw new ApiException(400, "Missing the required parameter 'userId' when calling storeDidMaps");
+      throw new ApiException(400, "Missing the required parameter 'userId' when calling getDidMap");
     }
 
     HttpRequest.Builder localVarRequestBuilder = HttpRequest.newBuilder();
@@ -100,7 +100,7 @@ public class DidMapControllerApi {
           HttpResponse.BodyHandlers.ofInputStream());
       if (localVarResponse.statusCode()/ 100 != 2) {
         throw new ApiException(localVarResponse.statusCode(),
-            "storeDidMaps call received non-success response",
+            "getDidMap call received non-success response",
             localVarResponse.headers(),
             localVarResponse.body() == null ? null : new String(localVarResponse.body().readAllBytes()));
       }
@@ -117,10 +117,10 @@ public class DidMapControllerApi {
    * @return DidMappingResponse
    * @throws ApiException if fails to make API call
    */
-  public DidMappingResponse storeDidMaps1(DidMappingRequest didMapRequest) throws ApiException {
+  public DidMappingResponse storeDidMaps(DidMappingRequest didMapRequest) throws ApiException {
     // verify the required parameter 'didMapRequest' is set
     if (didMapRequest == null) {
-      throw new ApiException(400, "Missing the required parameter 'didMapRequest' when calling storeDidMaps1");
+      throw new ApiException(400, "Missing the required parameter 'didMapRequest' when calling storeDidMaps");
     }
 
     HttpRequest.Builder localVarRequestBuilder = HttpRequest.newBuilder();
@@ -147,7 +147,7 @@ public class DidMapControllerApi {
           HttpResponse.BodyHandlers.ofInputStream());
       if (localVarResponse.statusCode()/ 100 != 2) {
         throw new ApiException(localVarResponse.statusCode(),
-            "storeDidMaps1 call received non-success response",
+            "storeDidMaps call received non-success response",
             localVarResponse.headers(),
             localVarResponse.body() == null ? null : new String(localVarResponse.body().readAllBytes()));
       }

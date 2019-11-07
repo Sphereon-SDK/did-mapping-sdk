@@ -9,7 +9,7 @@
           "application\/json;charset=UTF-8"
         ],
         "description": "Submit a list of DID Maps, associating a User ID to the necessary DID information for authentication",
-        "operationId": "storeDidMaps_1",
+        "operationId": "storeDidMaps",
         "responses": {
           "200": {
             "schema": {
@@ -63,7 +63,7 @@
           "application\/json;charset=UTF-8"
         ],
         "description": "Submit a list of DID Maps, associating a User ID to the necessary DID information for authentication",
-        "operationId": "storeDidMaps",
+        "operationId": "getDidMap",
         "responses": {
           "200": {
             "schema": {
@@ -106,7 +106,7 @@
       }
     }
   },
-  "host": "localhost:37961",
+  "host": "localhost:45971",
   "definitions": {
     "DidMappingResponse": {
       "type": "object",

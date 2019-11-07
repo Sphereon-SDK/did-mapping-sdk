@@ -1,17 +1,17 @@
 # DidMapControllerApi
 
-All URIs are relative to *http://localhost:37961*
+All URIs are relative to *http://localhost:45971*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**storeDidMaps**](DidMapControllerApi.md#storeDidMaps) | **GET** /didmaps/{applicationId}/{userId} | Get a stored DID Map
-[**storeDidMaps1**](DidMapControllerApi.md#storeDidMaps1) | **POST** /didmaps | Store DID Maps
+[**getDidMap**](DidMapControllerApi.md#getDidMap) | **GET** /didmaps/{applicationId}/{userId} | Get a stored DID Map
+[**storeDidMaps**](DidMapControllerApi.md#storeDidMaps) | **POST** /didmaps | Store DID Maps
 
 
 
-## storeDidMaps
+## getDidMap
 
-> ResponseEntity storeDidMaps(applicationId, userId)
+> ResponseEntity getDidMap(applicationId, userId)
 
 Get a stored DID Map
 
@@ -30,16 +30,16 @@ import com.sphereon.sdk.did.mapping.api.DidMapControllerApi;
 public class Example {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        defaultClient.setBasePath("http://localhost:37961");
+        defaultClient.setBasePath("http://localhost:45971");
 
         DidMapControllerApi apiInstance = new DidMapControllerApi(defaultClient);
         String applicationId = "applicationId_example"; // String | applicationId
         String userId = "userId_example"; // String | userId
         try {
-            ResponseEntity result = apiInstance.storeDidMaps(applicationId, userId);
+            ResponseEntity result = apiInstance.getDidMap(applicationId, userId);
             System.out.println(result);
         } catch (ApiException e) {
-            System.err.println("Exception when calling DidMapControllerApi#storeDidMaps");
+            System.err.println("Exception when calling DidMapControllerApi#getDidMap");
             System.err.println("Status code: " + e.getCode());
             System.err.println("Reason: " + e.getResponseBody());
             System.err.println("Response headers: " + e.getResponseHeaders());
@@ -79,9 +79,9 @@ No authorization required
 | **404** | Did Map not found. |  -  |
 
 
-## storeDidMaps1
+## storeDidMaps
 
-> DidMappingResponse storeDidMaps1(didMapRequest)
+> DidMappingResponse storeDidMaps(didMapRequest)
 
 Store DID Maps
 
@@ -100,15 +100,15 @@ import com.sphereon.sdk.did.mapping.api.DidMapControllerApi;
 public class Example {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        defaultClient.setBasePath("http://localhost:37961");
+        defaultClient.setBasePath("http://localhost:45971");
 
         DidMapControllerApi apiInstance = new DidMapControllerApi(defaultClient);
         DidMappingRequest didMapRequest = new DidMappingRequest(); // DidMappingRequest | didMapRequest
         try {
-            DidMappingResponse result = apiInstance.storeDidMaps1(didMapRequest);
+            DidMappingResponse result = apiInstance.storeDidMaps(didMapRequest);
             System.out.println(result);
         } catch (ApiException e) {
-            System.err.println("Exception when calling DidMapControllerApi#storeDidMaps1");
+            System.err.println("Exception when calling DidMapControllerApi#storeDidMaps");
             System.err.println("Status code: " + e.getCode());
             System.err.println("Reason: " + e.getResponseBody());
             System.err.println("Response headers: " + e.getResponseHeaders());
