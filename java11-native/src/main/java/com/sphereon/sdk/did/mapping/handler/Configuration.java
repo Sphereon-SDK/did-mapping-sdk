@@ -13,7 +13,7 @@
 
 package com.sphereon.sdk.did.mapping.handler;
 
-@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-07T13:45:10.192471+01:00[Europe/Amsterdam]")
+@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-11T11:15:14.749995+01:00[Europe/Amsterdam]")
 public class Configuration {
     private static ApiClient defaultApiClient = new ApiClient();
 

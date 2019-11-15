@@ -62,7 +62,7 @@
         "produces": [
           "application\/json;charset=UTF-8"
         ],
-        "description": "Submit a list of DID Maps, associating a User ID to the necessary DID information for authentication",
+        "description": "Retrieve a previously stored DID Map based of an App ID and User ID",
         "operationId": "getDidMap",
         "responses": {
           "200": {
@@ -103,7 +103,7 @@
       }
     }
   },
-  "host": "localhost:33757",
+  "host": "localhost:33983",
   "definitions": {
     "DidMappingResponse": {
       "type": "object",

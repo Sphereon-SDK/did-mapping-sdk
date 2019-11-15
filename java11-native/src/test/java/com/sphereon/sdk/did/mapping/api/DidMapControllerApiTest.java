@@ -17,7 +17,6 @@ import com.sphereon.sdk.did.mapping.handler.ApiException;
 import com.sphereon.sdk.did.mapping.model.DidMappingRequest;
 import com.sphereon.sdk.did.mapping.model.DidMappingResponse;
 import com.sphereon.sdk.did.mapping.model.ExceptionResponseBody;
-import com.sphereon.sdk.did.mapping.model.ResponseEntity;
 import org.junit.Test;
 import org.junit.Ignore;
 
@@ -38,7 +37,7 @@ public class DidMapControllerApiTest {
     /**
      * Get a stored DID Map
      *
-     * Submit a list of DID Maps, associating a User ID to the necessary DID information for authentication
+     * Retrieve a previously stored DID Map based of an App ID and User ID
      *
      * @throws ApiException
      *          if the Api call fails

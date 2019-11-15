@@ -37,7 +37,7 @@ import java.util.StringJoiner;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-07T13:45:10.192471+01:00[Europe/Amsterdam]")
+@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-11T11:15:14.749995+01:00[Europe/Amsterdam]")
 public class DidMapControllerApi {
   private final HttpClient memberVarHttpClient;
   private final ObjectMapper memberVarObjectMapper;
@@ -59,7 +59,7 @@ public class DidMapControllerApi {
 
   /**
    * Get a stored DID Map
-   * Submit a list of DID Maps, associating a User ID to the necessary DID information for authentication
+   * Retrieve a previously stored DID Map based of an App ID and User ID
    * @param applicationId applicationId (required)
    * @param userId userId (required)
    * @return DidMappingResponse

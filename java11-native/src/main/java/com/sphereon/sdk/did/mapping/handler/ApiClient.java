@@ -45,7 +45,7 @@ import java.util.stream.Collectors;
  * <p>The setter methods of this class return the current object to facilitate
  * a fluent style of configuration.</p>
  */
-@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-07T13:45:10.192471+01:00[Europe/Amsterdam]")
+@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-11T11:15:14.749995+01:00[Europe/Amsterdam]")
 public class ApiClient {
 
   private static final Charset UTF_8 = Charset.forName("UTF-8");
@@ -165,7 +165,7 @@ public class ApiClient {
     mapper.registerModule(new JavaTimeModule());
     JsonNullableModule jnm = new JsonNullableModule();
     mapper.registerModule(jnm);
-    URI baseURI = URI.create("http://localhost:33757");
+    URI baseURI = URI.create("http://localhost:33983");
     scheme = baseURI.getScheme();
     host = baseURI.getHost();
     port = baseURI.getPort();

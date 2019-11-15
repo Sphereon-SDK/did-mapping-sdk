@@ -1,6 +1,6 @@
 # DidMapControllerApi
 
-All URIs are relative to *http://localhost:33757*
+All URIs are relative to *http://localhost:33983*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 Get a stored DID Map
 
-Submit a list of DID Maps, associating a User ID to the necessary DID information for authentication
+Retrieve a previously stored DID Map based of an App ID and User ID
 
 ### Example
 
@@ -30,7 +30,7 @@ import com.sphereon.sdk.did.mapping.api.DidMapControllerApi;
 public class Example {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        defaultClient.setBasePath("http://localhost:33757");
+        defaultClient.setBasePath("http://localhost:33983");
 
         DidMapControllerApi apiInstance = new DidMapControllerApi(defaultClient);
         String applicationId = "applicationId_example"; // String | applicationId
@@ -100,7 +100,7 @@ import com.sphereon.sdk.did.mapping.api.DidMapControllerApi;
 public class Example {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        defaultClient.setBasePath("http://localhost:33757");
+        defaultClient.setBasePath("http://localhost:33983");
 
         DidMapControllerApi apiInstance = new DidMapControllerApi(defaultClient);
         DidMappingRequest didMapRequest = new DidMappingRequest(); // DidMappingRequest | didMapRequest
