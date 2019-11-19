@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   DidMap.JSON_PROPERTY_DID_INFO,
   DidMap.JSON_PROPERTY_USER_ID
 })
-@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-11T11:15:14.749995+01:00[Europe/Amsterdam]")
+@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-19T10:06:20.491252+01:00[Europe/Amsterdam]")
 public class DidMap {
   public static final String JSON_PROPERTY_APPLICATION_ID = "applicationId";
   private String applicationId;

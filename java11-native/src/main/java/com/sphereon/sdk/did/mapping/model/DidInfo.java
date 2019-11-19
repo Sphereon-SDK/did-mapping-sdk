@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   DidInfo.JSON_PROPERTY_PUSH_TOKEN,
   DidInfo.JSON_PROPERTY_DID
 })
-@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-11T11:15:14.749995+01:00[Europe/Amsterdam]")
+@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-19T10:06:20.491252+01:00[Europe/Amsterdam]")
 public class DidInfo {
   public static final String JSON_PROPERTY_BOX_PUB = "boxPub";
   private String boxPub;

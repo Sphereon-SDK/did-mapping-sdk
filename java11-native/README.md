@@ -4,7 +4,7 @@ Did Mapping MS
 
 - API version: 1.0.0
 
-- Build date: 2019-11-11T11:15:14.749995+01:00[Europe/Amsterdam]
+- Build date: 2019-11-19T10:06:20.491252+01:00[Europe/Amsterdam]
 
 A microservice for storing associations between user IDs and DIDs for applications that want to use DID-Auth
 
@@ -104,7 +104,7 @@ public class DidMapControllerApiExample {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://localhost:33983*
+All URIs are relative to *http://localhost:39685*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
