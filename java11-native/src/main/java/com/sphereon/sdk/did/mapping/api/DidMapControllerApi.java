@@ -37,7 +37,7 @@ import java.util.StringJoiner;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-19T10:06:20.491252+01:00[Europe/Amsterdam]")
+@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-21T15:19:36.065206+01:00[Europe/Amsterdam]")
 public class DidMapControllerApi {
   private final HttpClient memberVarHttpClient;
   private final ObjectMapper memberVarObjectMapper;
