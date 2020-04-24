@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
   DidMappingResponse.JSON_PROPERTY_DID_MAPS
 })
-@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-11-21T15:19:36.065206+01:00[Europe/Amsterdam]")
+@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-04-24T13:28:46.685659Z[Etc/UTC]")
 public class DidMappingResponse {
   public static final String JSON_PROPERTY_DID_MAPS = "didMaps";
   private List<DidMap> didMaps = null;
